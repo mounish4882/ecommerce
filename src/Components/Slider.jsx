@@ -1,11 +1,11 @@
 import styled from "styled-components"
-import {ArrowLeftOutlined,ArrowRightOutlined } from "@material-ui/icons"
+import { ArrowLeftOutlined,ArrowRightOutlined } from "@material-ui/icons"
+import  image1  from "./Images/1657907896112.jpeg"
 
 const Container = styled.div`
 width: 100%;
 height: 100vh;
 display: flex;
-background-color: coral;
 position: relative;
 `
 
@@ -33,14 +33,39 @@ const Wrapper = styled.div`
 const Slide = styled.div`
 display: flex;
 align-items: center;
+width: 100vw;
+height: 100vh;
 `
+
 const ImageContainer = styled.div`
-flex:1
+flex:1;
+height: 100%;
 `
-const Image = styled.img``
+const Image = styled.img`
+height: 80%;
+`
 
 const InfoContainer = styled.div`
-flex:1
+flex:1;
+padding:50px;
+`
+
+const Title = styled.h1`
+font-size: 78px;
+`
+
+const Desc = styled.p`
+margin : 50px 0px;
+font-size: 20px;
+font-weight : 500;
+letter-spacing : 3px;
+`
+
+const Button = styled.button`
+padding : 10px;
+font-size: 20px;
+background-color: transparent;
+cursor: pointer;
 `
 
 const Slider = () => {
@@ -52,11 +77,12 @@ const Slider = () => {
         <Wrapper>
             <Slide>
                 <ImageContainer>
-                    HI
+                    <Image src={image1} alt="logo" />
                 </ImageContainer>
-                <Image></Image>
                 <InfoContainer>
-                    HI
+                    <Title>RAINY SALE</Title>
+                    <Desc>DON'T COMPROMISE ON STYLE!! FLAT 30% OFF FOR NEW ARRIVALS</Desc>
+                    <Button>SHOP NOW</Button>
                 </InfoContainer>
             </Slide>
         </Wrapper>
