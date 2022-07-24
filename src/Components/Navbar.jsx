@@ -64,7 +64,7 @@ const Navbar = () => {
                     <Search style={{color:"gray",fontSize:16}}/>
                 </SearchContainer>
             </Left>
-            <Center><Logo>Madhuri's Boutique</Logo></Center>
+            <Center><Logo>MADDY'S ZUDIO</Logo></Center>
             <Right>
                 <MenuItem>REGISTER</MenuItem>
                 <MenuItem>SIGN IN</MenuItem>
